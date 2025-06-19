@@ -2,4 +2,3 @@
 
 チームで Web ページを構築する演習
 
-<a href='./home.html'>home</a>

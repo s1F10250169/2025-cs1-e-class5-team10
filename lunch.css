@@ -8,10 +8,6 @@ body {
 }
 
 .container {
-    margin: #fa8808;
-}
-
-.container {
     display: flex;
     height: 100vh;
 }

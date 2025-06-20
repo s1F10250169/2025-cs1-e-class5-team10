@@ -38,7 +38,7 @@ h2 {
 
 .store {
     border-left: solid 3px #02a0e4;
-    background-color: rgb(232, 246, 255);
+    background-color: rgba(232, 246, 255, 0.5);
     padding-left: 5px;
 
 }

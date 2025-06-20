@@ -34,3 +34,10 @@ body {
 .selection:hover {
     text-decoration: underline;
 }
+
+.store {
+    border-left: solid 3px #02a0e4;
+    background-color: rgb(232, 246, 255);
+    padding-left: 5px;
+
+}

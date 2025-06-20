@@ -4,7 +4,7 @@ body {
 
 
 #lunch {
-    color: #fa8808;
+    color: #fad208;
 }
 
 .container {
@@ -35,5 +35,34 @@ body {
     border-left: solid 3px #02a0e4;
     background-color: rgb(232, 246, 255);
     padding-left: 5px;
+
+}
+
+h2.title {
+    color: #fa5555
+}
+
+h4.kyosuke {
+    color: rgba(122, 107, 6, 0.936);
+    border-bottom: #0835d9 solid 3px;
+}
+
+h4.natumi {
+    color: rgba(16, 10, 174, 0.936);
+    border-bottom: #d90808 solid 3px;
+}
+
+h4.toutyou {
+    color: rgb(231, 50, 53);
+    border-bottom: #251f05 solid 3px;
+}
+
+h4.syokudou {
+    color: rgba(182, 9, 75, 0.936);
+    border-bottom: #0a9843 solid 3px;
+}
+
+main.main-content {
+    background-color: rgba(0, 255, 30, 0.2);
 
 }

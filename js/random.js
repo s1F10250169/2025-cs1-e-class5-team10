@@ -1,5 +1,5 @@
 const restaurants = [
-  { id: "kyosuke", page: "./ra-men/ra-men.html" },
+  { id: "kyousuke", page: "./ra-men/ra-men.html" },
   { id: "natsumi", page: "./ra-men/ra-men.html" },
   { id: "zenji", page: "./ra-men/ra-men.html" },
   { id: "gusto", page: "./famiresu/famiresu.html" },

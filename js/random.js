@@ -1,6 +1,13 @@
 const restaurants = [
-  { id: "kyosuke", page: "temp.html" },
-  { id: "natsumi", page: "temp.html" },
+  { id: "kyosuke", page: "../ra-men/ra-men.html" },
+  { id: "natsumi", page: "../ra-men/ra-men.html" },
+  { id: "zenji", page: "../ra-men/ra-men.html" },
+  { id: "gusto", page: "../famiresu/famiresu.html" },
+  { id: "saizeriya", page: "../famiresu/famiresu.html" },
+  { id: "dennys", page: "../famiresu/famiresu.html" },
+  { id: "jonathan", page: "../famiresu/famiresu.html" },
+  { id: "toutyou", page: "../teisyoku/teisyoku.html" },
+  { id: "gakusyoku", page: "../teisyoku/teisyoku.html" },
 ];
 
 window.addEventListener("DOMContentLoaded", () => {

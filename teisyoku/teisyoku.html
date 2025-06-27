@@ -49,3 +49,20 @@
 
 </html>
 
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const targetId = params.get("scrollTo");
+    if (targetId) {
+      const target = document.getElementById(targetId);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        target.style.transition = "background-color 0.5s";
+        target.style.backgroundColor = "#ffffcc";
+        setTimeout(() => {
+          target.style.backgroundColor = "";
+        }, 2000);
+      }
+    }
+  });
+</script>

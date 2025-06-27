@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>赤羽のファミレス</title>
+    <link rel="stylesheet" href="famiresu.css" />
+</head>
+
+<body>
+    <aside class="sidebar">
+        <a class="site-title" href="index.html">赤羽の飲食店</a>
+        <nav>
+            <ul>
+                <li><a href="ramen.html">ラーメン</a></li>
+                <li><a href="famiresu.html">ファミレス</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <h1 id="dinner">ファミレス</h1>
+
+        <div class="shop-block" id="gusto">
+            <img src=".jpg" alt="ガストの写真" />
+            <div class="shop-info">
+                <h4>ガスト</h4>
+                <p>
+
+                </p>
+                <a href="" target="_blank">公式HP</a>
+            </div>
+        </div>
+
+        <div class="shop-block" id="saizeriya">
+            <img src=".jpg" alt="サイゼリヤの写真" />
+            <div class="shop-info">
+                <h4>サイゼリヤ</h4>
+                <p>
+
+                </p>
+                <a href="" target="_blank">公式HP</a>
+            </div>
+        </div>
+
+        <div class="shop-block" id="jonathan">
+            <img src=".jpg" alt="ジョナサンの写真" />
+            <div class="shop-info">
+                <h4>ジョナサン</h4>
+                <p>
+
+                </p>
+                <a href="" target="_blank">公式HP</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+<script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(window.location.search);
+        const targetId = params.get("scrollTo");
+        if (targetId) {
+            const target = document.getElementById(targetId);
+            if (target) {
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+                target.style.transition = "background-color 0.5s";
+                target.style.backgroundColor = "#ffffcc";
+                setTimeout(() => {
+                    target.style.backgroundColor = "";
+                }, 2000);
+            }
+        }
+    });
+</script>

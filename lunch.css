@@ -1,68 +1,108 @@
 body {
-    margin: 0;
-}
-
-
-#lunch {
-    color: #fad208;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #f8f8f8;
+  color: #2a2a2a;
+  display: flex;
 }
 
 .sidebar {
-    width: 150px;
-    background-color: #e0e0e0;
-    padding: 20px;
+  width: 150px;
+  height: 100vh;
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding: 30px 24px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.03);
+}
+
+.sidebar .site-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #8b1e3f;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+
+.site-title:hover {
+  text-decoration: underline;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #444;
+  transition: color 0.25s;
+}
+
+.sidebar nav a:hover {
+  color: #c6a664;
+  font-weight: 600;
 }
 
 .main-content {
-    padding: 20px;
+  margin-left: 30px;
 }
 
-.selection {
-    color: inherit;
-    text-decoration: none;
+.main-content h1 {
+  font-size: 28px;
+  border-bottom: 2px solid #c6a664;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
-.selection:hover {
-    text-decoration: underline;
+.shop-block {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  align-items: flex-start;
 }
 
-.store {
-    border-left: solid 3px #02a0e4;
-    background-color: rgb(232, 246, 255);
-    padding-left: 5px;
-
+.shop-block img {
+  width: 180px;
+  height: 120px;
+  object-fit: center;
+  border-radius: 8px;
+  background-color: #ddd;
 }
 
-h2.title {
-    color: #fa5555
+.shop-info h4 {
+  font-size: 18px;
+  color: #8b1e3f;
+  margin-bottom: 8px;
 }
 
-h4.kyosuke {
-    color: rgba(122, 107, 6, 0.936);
-    border-bottom: #0835d9 solid 3px;
+.shop-info p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 12px;
 }
 
-h4.natumi {
-    color: rgba(16, 10, 174, 0.936);
-    border-bottom: #d90808 solid 3px;
+.shop-info a {
+  display: inline-block;
+  background-color: #c6a664;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
 }
 
-h4.toutyou {
-    color: rgb(231, 50, 53);
-    border-bottom: #251f05 solid 3px;
-}
-
-h4.syokudou {
-    color: rgba(182, 9, 75, 0.936);
-    border-bottom: #0a9843 solid 3px;
-}
-
-main.main-content {
-    background-color: rgba(0, 255, 30, 0.2);
-
+.shop-info a:hover {
+  background-color: #a58e48;
 }

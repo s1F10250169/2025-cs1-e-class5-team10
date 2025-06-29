@@ -9,15 +9,14 @@ const restaurants = [
   { id: "toutyou", page: "./teisyoku/teisyoku.html" },
   { id: "gakusyoku", page: "./teisyoku/teisyoku.html" },
 ];
-const goToRecommendation = () => {
-  window.addEventListener("DOMContentLoaded", () => {
-    const button = document.getElementById("random-button");
-    if (button) {
-      button.addEventListener("click", () => {
-        const chosen =
-          restaurants[Math.floor(Math.random() * restaurants.length)];
-        window.location.href = `${chosen.page}?scrollTo=${chosen.id}`;
-      });
-    }
-  });
-};
+
+window.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("random-button");
+  if (button) {
+    button.addEventListener("click", () => {
+      const chosen =
+        restaurants[Math.floor(Math.random() * restaurants.length)];
+      window.location.href = `${chosen.page}?scrollTo=${chosen.id}`;
+    });
+  }
+});

@@ -1,5 +1,8 @@
+html,
 body {
   margin: 0;
+  padding: 0;
+  height: 100%;
   font-family: "Noto Sans JP", sans-serif;
   background-color: #f8f8f8;
   color: #2a2a2a;
@@ -8,7 +11,7 @@ body {
 
 .sidebar {
   width: 200px;
-  height: 100vh;
+  height: 1000px;
   background-color: #fff;
   border-right: 1px solid #e0e0e0;
   padding: 30px 24px;
